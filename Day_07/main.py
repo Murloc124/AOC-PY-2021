@@ -1,8 +1,6 @@
 from math import dist
 import os
 import statistics
-from collections import Counter
-from turtle import pos
 
 def calculate_needed_fuel_median(positions: list) -> int:
     return sum(map(lambda x: abs(x - statistics.median(positions)), positions))
